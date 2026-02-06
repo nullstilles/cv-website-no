@@ -305,19 +305,47 @@ a:hover {
     padding-inline: 16px;
   }
 
+  /* Switch detailed grid to flex column for easier reordering */
   .layout {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
   }
 
-  .sidebar .panel {
+  /* Move sidebar to bottom */
+  .sidebar {
+    order: 2;
+    width: 100%;
     position: static;
     top: auto;
   }
 
+  .main-content {
+    order: 1;
+    width: 100%;
+  }
+
+  /* Header adjustments for mobile */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    width: 100%;
+  }
+
   .avatar {
-    inline-size: 88px;
-    block-size: 88px;
+    inline-size: 80px;
+    block-size: 80px;
+  }
+
+  .site-title {
+    font-size: var(--step-1);
   }
 
   .panel {

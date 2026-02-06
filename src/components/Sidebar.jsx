@@ -7,7 +7,7 @@ function Sidebar() {
                     <ul className="contact-list">
                         <li>Email: <a className="break" href="mailto:nullstilles@gmail.com">nullstilles@gmail.com</a></li>
                         <li>Telefon: <a href="tel:+4793270531">+47 932 70 531</a></li>
-                        <li>Adresse: Saupstadringen 53A, 7078 Saupstad, Trondheim</li>
+                        <li>Adresse: Gaubekveita 8, 7010 Trondheim</li>
                         <li>Språk:
                             <span className="chip">Engelsk</span>
                             <span className="chip">Norsk</span>
